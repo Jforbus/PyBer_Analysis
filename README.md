@@ -23,7 +23,7 @@ Senior management at PyBer has requested an analysis of ride-sharing data from m
 
 To begin the analysis, the two csv files that hold the PyBer data are loaded into DataFrames, which are subsequently merged to create a new DataFrame that contains all the available data. From these DataFrames the information for the summary DataFrame is collected into multiple Series. Each of these series is then added to the final summary DataFrame. Once the new DataFrame is formatted the first deliverable is complete.
 
-![pyber_summary_df.png]()
+![pyber_summary_df.png](https://github.com/Jforbus/PyBer_Analysis/blob/main/Resources/pyber_summary_df.png)
 
 This DataFrame contains some very valuable information. First, it shows that Urban cities account for 13 times as many rides as Rural cities. There are 5 times as many Suburban rides as Rural Rides. The majority of Total Rides are in Urban cities. An even more extreme disparity exists in the Total Drivers column, with Urban drivers making up over 30 times more of the driver population than Rural Drivers, and nearly 5 times more than Suburban drivers. Fare Totals follow the previous trend in the data, with Rural cities only earning 6.8% of the Fare Totals. Urban cities earned 62.7% of the Fare Totals, and Suburban cities received 30.5% of the Total Fares. Along with these discoveries, the DataFrame shows that the average fare per ride and per driver are much higher in Rural cities. Riders in Rural cities pay on average 30% more per ride than riders in Urban cities. This is mirrored by a significant increase in the average fare per driver in Rural cities versus Urban cities. Drivers in Rural cities earn a significantly larger amount per ride than those in Urban cities. Throughout this table, the numbers for Suburban city types have consistently presented between the Urban and Rural numbers. The data shows that where Ride and Driver Totals are higher, and Average Fares lower, the Total Fares are much higher. 
 
@@ -32,7 +32,7 @@ This DataFrame contains some very valuable information. First, it shows that Urb
 Secondly, the line graph must be created. To do this a pivot table is created from the merged DataFrame that indexes the ride data by date, and provides the city type and fare for each ride.
 From this pivot table the section of time to be graphed is selected, organized into weekly bins that hold the total fares for the week for each city type, and converted into a new DataFrame. The graph is then created from this DataFrame
 
-![PyBer_fare_summary.png]()
+![PyBer_fare_summary.png](https://github.com/Jforbus/PyBer_Analysis/blob/main/Analysis/PyBer_fare_summary.png)
 
 The graph gives another revelatory perpective on the data. It shows that each of the city types brings in a very different share of the total fares in each week. Each city type occupies its own tier on the graph: Urban from 1500 to 2500, Suburban from 500 to 1500, and Rural from 0 to 500. There is a peak in the total fares for all 3 city types a week prior to the end of February. These simultaneous peaks suggest a corresponding event to the rise in total fares that transcends the city type. Overall the graph shows that the total weekly fares remain relatively consistent across the timeframe measured, and Suburban Fare Totals stayed between Urban and Rural Fare Totals for the duration of the graphed data. 
 
