@@ -21,7 +21,7 @@ Senior management at PyBer has requested an analysis of ride-sharing data from m
 
 ### Summary DataFrame.
 
-To begin the analysis, the two csv files that hold the PyBer data are loaded into DataFrames, which are subsequently merged to create a new DataFrame that contains all the available data. From these DataFrames the information for the summary DataFrame is collected into multiple Series. Each of these series is then added to the final summary DataFrame. Once the new DataFrame is formatted the first deliverable is complete.
+To begin the analysis, the two csv files that hold the PyBer data are loaded into DataFrames, these two DataFrames are subsequently merged to create a new DataFrame that contains all of the available data. From this merged DataFrame the information for the summary DataFrame is collected into multiple Series. Once all the necessary Series are created, each of them is added to the final summary DataFrame. Once the new DataFrame is formatted the first deliverable is complete.
 
 ![pyber_summary_df.png](https://github.com/Jforbus/PyBer_Analysis/blob/main/Resources/pyber_summary_df.png)
 
@@ -30,7 +30,7 @@ This DataFrame contains some very valuable information. First, it shows that Urb
 ### Weekly Fare by City Type Line Graph.
 
 Secondly, the line graph must be created. To do this a pivot table is created from the merged DataFrame that indexes the ride data by date, and provides the city type and fare for each ride.
-From this pivot table the section of time to be graphed is selected, organized into weekly bins that hold the total fares for the week for each city type, and converted into a new DataFrame. The graph is then created from this DataFrame
+From this pivot table the section of time to be graphed is selected, organized into weekly bins that hold the total fares for the week for each city type, and converted into a new DataFrame. The graph is then created from this DataFrame.
 
 ![PyBer_fare_summary.png](https://github.com/Jforbus/PyBer_Analysis/blob/main/Analysis/PyBer_fare_summary.png)
 
@@ -41,6 +41,6 @@ The graph gives another revelatory perpective on the data. It shows that each of
 
 The analysis shows that where ride totals are higher, fares are lower and fare totals are higher. Fare per driver and per ride is also lower than where fare totals are lower. There is likely a correlary attribute associated with the city type that leads to the drastically higher ride totals in Urban cities versus Rural cites. Population density differences, demographic differences, marketing limits, and many other factors could be contributing to the disparity in the data. In order to address the differences in the data, Pyber will need to increase Ride Totals for Rural cities drastically, along with raising Ride Totals in Suburban cities. Suggestions for PyBer to approach this are:
 
-    1. Increase Marketing efforts to Rural and Suburban cities to gain more interest in the service, increasing ride totals. 
-    2. Recruit more Drivers in Rural and Suburban cities. Urban cities have a significantly higher Driver Totals. Increased Driver availability could lead to higher Ride Totals and Fare Totals in Rural and Suburban cities.
-    3. Decrease Average Fares in Rural and Suburban cities. Fares are higher on average in these city types. Higher fares could be deterring customers, driving down Ride Totals in Rural and Suburban cities. 
+1. Increase Marketing efforts to Rural and Suburban cities to gain more interest in the service, increasing ride totals. 
+2. Recruit more Drivers in Rural and Suburban cities. Urban cities have a significantly higher Driver Totals. Increased Driver availability could lead to higher Ride Totals and Fare Totals in Rural and Suburban cities.
+3. Decrease Average Fares in Rural and Suburban cities. Fares are higher on average in these city types. Higher fares could be deterring customers, driving down Ride Totals in Rural and Suburban cities. 
